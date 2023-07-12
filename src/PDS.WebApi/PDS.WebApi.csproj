@@ -1,0 +1,91 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ViewModels\" />
+    <None Remove="DTO\" />
+    <None Remove="Controllers\" />
+    <None Remove="Mappings\" />
+    <None Remove="Properties\" />
+    <None Remove="Npgsql.EntityFrameworkCore.PostgreSQL" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="AutoMapper" />
+    <None Remove="FluentValidation.AspNetCore" />
+    <None Remove="DTO\Address\" />
+    <None Remove="DTO\Client\" />
+    <None Remove="DTO\AgriculturalProducer\" />
+    <None Remove="DTO\Product\" />
+    <None Remove="DTO\Order\" />
+    <None Remove="DTO\OrderSplitted\" />
+    <None Remove="DTO\ProductRoute\" />
+    <None Remove="DTO\Request\" />
+    <None Remove="DTO\Route\" />
+    <None Remove="ViewModels\Address\" />
+    <None Remove="ViewModels\AgriculturalProducer\" />
+    <None Remove="ViewModels\Client\" />
+    <None Remove="ViewModels\Order\" />
+    <None Remove="ViewModels\OrderSplitted\" />
+    <None Remove="ViewModels\Product\" />
+    <None Remove="ViewModels\ProductRoute\" />
+    <None Remove="ViewModels\Request\" />
+    <None Remove="ViewModels\Route\" />
+    <None Remove="ViewModels\User\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
+    <Folder Include="DTO\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Mappings\" />
+    <Folder Include="Properties\" />
+    <Folder Include="DTO\Address\" />
+    <Folder Include="DTO\Client\" />
+    <Folder Include="DTO\AgriculturalProducer\" />
+    <Folder Include="DTO\Product\" />
+    <Folder Include="DTO\Order\" />
+    <Folder Include="DTO\OrderSplitted\" />
+    <Folder Include="DTO\ProductRoute\" />
+    <Folder Include="DTO\Request\" />
+    <Folder Include="DTO\Route\" />
+    <Folder Include="ViewModels\Address\" />
+    <Folder Include="ViewModels\AgriculturalProducer\" />
+    <Folder Include="ViewModels\Client\" />
+    <Folder Include="ViewModels\Order\" />
+    <Folder Include="ViewModels\OrderSplitted\" />
+    <Folder Include="ViewModels\Product\" />
+    <Folder Include="ViewModels\ProductRoute\" />
+    <Folder Include="ViewModels\Request\" />
+    <Folder Include="ViewModels\Route\" />
+    <Folder Include="ViewModels\User\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.3" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="DotNetEnv" Version="2.5.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.15" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.16.0" />
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PDS.Data\PDS.Data.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\PDS.Domain\PDS.Domain.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\PDS.Services\PDS.Services.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

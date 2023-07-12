@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Entities\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Interfaces\RepositoryInterfaces\" />
+    <None Remove="Interfaces\ServiceInterfaces\" />
+    <None Remove="Entities\User\" />
+    <None Remove="FluentValidation.AspNetCore" />
+    <None Remove="Entities\AgriculturalProducer\" />
+    <None Remove="Entities\Address\" />
+    <None Remove="Entities\Client\" />
+    <None Remove="Entities\Route\" />
+    <None Remove="Entities\ProductRoute\" />
+    <None Remove="Entities\Product\" />
+    <None Remove="Entities\OrderSplitted\" />
+    <None Remove="Entities\Order\" />
+    <None Remove="Interfaces\UnitOfWork\" />
+    <None Remove="Interfaces\Base\" />
+    <None Remove="Enum\" />
+    <None Remove="Constants\" />
+    <None Remove="Entities\Media\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Interfaces\RepositoryInterfaces\" />
+    <Folder Include="Interfaces\ServiceInterfaces\" />
+    <Folder Include="Entities\User\" />
+    <Folder Include="Entities\AgriculturalProducer\" />
+    <Folder Include="Entities\Address\" />
+    <Folder Include="Entities\Client\" />
+    <Folder Include="Entities\Route\" />
+    <Folder Include="Entities\ProductRoute\" />
+    <Folder Include="Entities\Product\" />
+    <Folder Include="Entities\OrderSplitted\" />
+    <Folder Include="Entities\Order\" />
+    <Folder Include="Interfaces\UnitOfWork\" />
+    <Folder Include="Interfaces\Base\" />
+    <Folder Include="Enum\" />
+    <Folder Include="Constants\" />
+    <Folder Include="Entities\Media\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.3" />
+  </ItemGroup>
+</Project>
